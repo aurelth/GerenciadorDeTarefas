@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "BNjuuUmpDj0=",
+  "dgSpecHash": "b1u+BQX5T2M=",
   "success": true,
   "projectFilePath": "C:\\Users\\Aurel\\source\\repos\\GerenciadorDeTarefas\\GerenciadorDeTarefas\\GerenciadorDeTarefas.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Aurel\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.0\\microsoft.extensions.dependencyinjection.9.0.0.nupkg.sha512",
+    "C:\\Users\\Aurel\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
