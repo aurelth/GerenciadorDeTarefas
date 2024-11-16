@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorDeTarefas", "GerenciadorDeTarefas\GerenciadorDeTarefas.csproj", "{1588AB57-39FB-4DD3-A69B-D525DA641338}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorDeTarefas.Tests", "GerenciadorDeTarefas.Tests\GerenciadorDeTarefas.Tests.csproj", "{D864CD58-E41F-440C-99C4-3FA8726D6D62}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1588AB57-39FB-4DD3-A69B-D525DA641338}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1588AB57-39FB-4DD3-A69B-D525DA641338}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1588AB57-39FB-4DD3-A69B-D525DA641338}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D864CD58-E41F-440C-99C4-3FA8726D6D62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D864CD58-E41F-440C-99C4-3FA8726D6D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D864CD58-E41F-440C-99C4-3FA8726D6D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D864CD58-E41F-440C-99C4-3FA8726D6D62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

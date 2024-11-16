@@ -5,12 +5,16 @@ namespace GerenciadorDeTarefas
 {
     public class GerenciadorTarefas : IGerenciadorTarefas
     {
-        private List<Tarefa> tarefas = new List<Tarefa>();
+        private List<Tarefa> tarefas;
         private const string CaminhoArquivo = "tarefas.json";
 
-        public GerenciadorTarefas()
+        public GerenciadorTarefas(List<Tarefa> listaDeTarefas = null)
         {
-            CarregarTarefas();
+            tarefas = listaDeTarefas ?? new List<Tarefa>();
+            if (listaDeTarefas == null)
+            {
+                CarregarTarefas();
+            }
         }
 
         public void AdicionarTarefa(string titulo, string descricao)
@@ -46,11 +50,7 @@ namespace GerenciadorDeTarefas
         public void EditarTarefa(Guid id, string novoTitulo, string novaDescricao)
         {
             var tarefa = tarefas.FirstOrDefault(t => t.Id == id);
-            if (tarefa == null)
-            {
-                Console.WriteLine("Tarefa não encontrada.");
-                return;
-            }
+            if (tarefa == null) throw new ArgumentException("Tarefa não encontrada.");
 
             tarefa.Titulo = novoTitulo;
             tarefa.Descricao = novaDescricao;         
@@ -62,11 +62,7 @@ namespace GerenciadorDeTarefas
         public void ExcluirTarefa(Guid id)
         {
             var tarefa = tarefas.FirstOrDefault(t => t.Id == id);
-            if (tarefa == null)
-            {
-                Console.WriteLine("Tarefa não encontrada.");
-                return;
-            }
+            if (tarefa == null) throw new ArgumentException("Tarefa não encontrada.");
 
             tarefas.Remove(tarefa);
             SalvarTarefas();
@@ -75,11 +71,7 @@ namespace GerenciadorDeTarefas
         public void AlternarStatusTarefa(Guid id)
         {
             var tarefa = tarefas.FirstOrDefault(t => t.Id == id);
-            if (tarefa == null)
-            {
-                Console.WriteLine("Tarefa não encontrada.");
-                return;
-            }
+            if (tarefa == null) throw new ArgumentException("Tarefa não encontrada.");
 
             tarefa.Concluida = !tarefa.Concluida;
             tarefa.DataConclusao = tarefa.Concluida ? DateTime.Now : null;
