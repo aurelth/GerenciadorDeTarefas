@@ -60,6 +60,7 @@ Persistência de Dados:
 
 Testes Unitários
 	*Testes foram implementados para testar cada método usando NUnit
+ 
 Pré-requisitos para Executar o Projeto
 	*.NET 6.0 SDK instalado.
 	*Um editor ou IDE, como Visual Studio 2022 ou Visual Studio Code.
